@@ -1,0 +1,106 @@
+.pokemon-card {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 450px;
+  background-color: $bg-color;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid;
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+
+  }
+
+  &__name {
+    text-align: center;
+  }
+
+  &_list {
+
+    display: inline-block;
+    position: relative;
+    clear: right;
+
+    &__type {
+      float: left;
+      margin-right: 5px;
+
+    }
+  }
+
+  &__heart {
+    display: inline-block;
+    position: relative;
+    float: left;
+    top: 50px;
+
+  }
+
+  &__heart:hover {
+    color: red;
+  }
+
+}
+
+.pokemon-card:hover {
+  background-color: $cream;
+  border: 2px solid;
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .pokemon-card {
+    width: 30%;
+    height: 400px;
+    margin: 12px;
+    padding: 10px;
+
+    &__img {
+      width: 130px;
+      height: 130px;
+      margin: 10px;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .pokemon-card {
+    width: 30%;
+    height: 400px;
+    margin: 12px;
+    padding: 10px;
+
+    &__img {
+      width: 110px;
+      height: 110px;
+      margin: 10px;
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .pokemon-card {
+    width: 30%;
+    height: 400px;
+    margin: 12px;
+    padding: 10px;
+
+    &__img {
+      width: 90px;
+      height: 90px;
+      margin: 0;
+
+    }
+  }
+
+}

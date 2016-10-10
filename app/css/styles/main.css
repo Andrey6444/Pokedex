@@ -1,0 +1,183 @@
+.body {
+  background-image: url("../../images/bg-img2.png"); }
+
+.header {
+  position: relative;
+  width: 60%;
+  height: 110px;
+  margin: 20px auto;
+  padding: 0 auto;
+  border-radius: 10px;
+  border: 1px solid;
+  text-align: center; }
+  .header__title {
+    font-family: "BigNoodleTitling", Sans-Serif fantasy;
+    font-size: 80px;
+    font-weight: 400;
+    background-color: #fffcf5;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: 1px solid; }
+
+.pokemon-all {
+  position: relative;
+  float: left;
+  width: 60%;
+  margin: 20px 20px;
+  border-radius: 10px;
+  border: 1px solid;
+  overflow: hidden; }
+  .pokemon-all__more {
+    margin: 25px;
+    width: 750px; }
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .pokemon-all {
+    width: 570px;
+    margin: 20px 20px; }
+    .pokemon-all__more {
+      margin: 25px;
+      width: 750px; } }
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .pokemon-all {
+    width: 100%; }
+    .pokemon-all__more {
+      margin: 25px;
+      width: 150px; } }
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .pokemon-all {
+    width: 100%; }
+    .pokemon-all__more {
+      margin: 25px;
+      width: 150px; } }
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .pokemon-all {
+    width: 100%; }
+    .pokemon-all__more {
+      margin: 25px;
+      width: 150px; } }
+
+.pokemon-selected {
+  position: relative;
+  float: left;
+  width: 33%;
+  margin: 400px 20px;
+  background-color: #fffcf5;
+  border-radius: 10px;
+  border: 1px solid;
+  overflow: hidden; }
+  .pokemon-selected__image {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    position: relative; }
+  .pokemon-selected__name {
+    font-family: "BigNoodleTitling", Sans-Serif;
+    font-size: 60px;
+    text-align: center; }
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .pokemon-selected {
+    width: 33%;
+    margin: 400px 20px;
+    border-radius: 10px; }
+    .pokemon-selected__image {
+      width: 250px;
+      height: 250px;
+      margin: 20px; } }
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .pokemon-selected {
+    width: 500px;
+    margin: 20px 20px; }
+    .pokemon-selected__image {
+      width: 250px;
+      height: 250px; } }
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .pokemon-selected {
+    width: 400px;
+    margin: 20px 20px; }
+    .pokemon-selected__image {
+      width: 250px;
+      height: 250px; } }
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .pokemon-selected {
+    width: 300px;
+    margin: 20px 20px; }
+    .pokemon-selected__image {
+      width: 250px;
+      height: 250px; } }
+
+.pokemon-card {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 450px;
+  background-color: #fffcf5;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid; }
+  .pokemon-card__img {
+    width: 200px;
+    height: 200px;
+    margin: 10px; }
+  .pokemon-card__name {
+    text-align: center; }
+  .pokemon-card_list {
+    display: inline-block;
+    position: relative;
+    clear: right; }
+    .pokemon-card_list__type {
+      float: left;
+      margin-right: 5px; }
+  .pokemon-card__heart {
+    display: inline-block;
+    position: relative;
+    float: left;
+    top: 50px; }
+  .pokemon-card__heart:hover {
+    color: red; }
+
+.pokemon-card:hover {
+  background-color: #f2f2f2;
+  border: 2px solid; }
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+  .pokemon-card {
+    width: 30%;
+    height: 400px;
+    margin: 12px;
+    padding: 10px; }
+    .pokemon-card__img {
+      width: 130px;
+      height: 130px;
+      margin: 10px; } }
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .pokemon-card {
+    width: 30%;
+    height: 400px;
+    margin: 12px;
+    padding: 10px; }
+    .pokemon-card__img {
+      width: 110px;
+      height: 110px;
+      margin: 10px; } }
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .pokemon-card {
+    width: 30%;
+    height: 400px;
+    margin: 12px;
+    padding: 10px; }
+    .pokemon-card__img {
+      width: 90px;
+      height: 90px;
+      margin: 0; } }

@@ -1,0 +1,46 @@
+
+
+<section class="pokemon-selected" ng-show="showMore">
+    <pokemon-image-selected-ls></pokemon-image-selected-ls>
+    <h2 class="pokemon-selected__name">{{pokSelCtrl.pokemon.name + "  #"+ pokSelCtrl.pokemonId}}</h2>
+
+
+    <table class="table table-striped  pokemon-selected_table">
+        <tr>
+            <td>Type</td>
+            <td>Fire</td>
+        </tr>
+        <tr>
+            <td>Attack</td>
+            <td>{{pokSelCtrl.pokemon.attack}}</td>
+        </tr>
+        <tr>
+            <td>Defense</td>
+            <td>{{pokSelCtrl.pokemon.defense}}</td>
+        </tr>
+        <tr>
+            <td>HP</td>
+            <td>{{pokSelCtrl.pokemon.hp}}</td>
+        </tr>
+        <tr>
+            <td>SP Attack</td>
+            <td>{{pokSelCtrl.pokemon.sp_atk}}</td>
+        </tr>
+        <tr>
+            <td>SP Defense</td>
+            <td>{{pokSelCtrl.pokemon.sp_def}}</td>
+        </tr>
+        <tr>
+            <td>Speed</td>
+            <td>{{pokSelCtrl.pokemon.speed}}</td>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td>{{pokSelCtrl.pokemon.weight}}</td>
+        </tr>
+        <tr>
+            <td>Total Moves</td>
+            <td>{{pokSelCtrl.pokemon.moves.length}}</td>
+        </tr>
+    </table>
+</section>

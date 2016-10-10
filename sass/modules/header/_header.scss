@@ -1,0 +1,27 @@
+.body{
+  @include body_image('bg-img2.png');
+}
+
+.header{
+  position: relative;
+  width: 60%;
+  height: 110px;
+  margin: 20px auto;
+  padding: 0 auto;
+  border-radius: 10px;
+  border: 1px solid;
+  text-align: center;
+
+
+  &__title{
+    font-family:  $bigNoodleTitling fantasy;
+    font-size: 80px;
+    font-weight: 400;
+    background-color: $bg-color;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius:10px;
+    border: 1px solid;
+  }
+}
+

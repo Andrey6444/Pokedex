@@ -1,0 +1,30 @@
+<section class="pokemon-all">
+    <section ng-show="pokGetLsCtrl.pokemons.length > 0">
+        <section ng-repeat="pokemon in pokGetLsCtrl.pokemons"
+                 class="pokemon-card"
+                 ng-click="pokSelCtrl.showPokemonId(pokemon.national_id,pokemon.image)">
+
+            <img class="pokemon-card__img" ng-src="{{pokCtrl.products.image}}" alt="">
+
+            <h2 class="pokemon-card__name">{{pokemon.name}}</h2>
+
+            <ul class="pokemon-card_list">
+                <li class="pokemon-card_list__type btn"
+                    ng-repeat="type in pokemon.types"
+                    ng-class="{'btn btn-primary': type.name =='water',
+            'btn btn-info':type.name =='flying',
+            'btn btn-danger':type.name =='poison',
+            'btn btn-success':type.name =='normal',
+            'btn btn-warning':type.name =='bug'}">
+                    {{type.name}}
+                </li>
+            </ul>
+
+            <i class=" pokemon-card__heart fa fa-heart-o fa-3x"
+               ng-controller="PokemonAddLSController as addLsCtrl"></i>
+
+        </section>
+        <button class=" pokemon-all__more btn btn-primary" ng-click="showMore = !showMore">Load More</button>
+
+    </section>
+</section>
